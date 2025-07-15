@@ -1,0 +1,18 @@
+{"time":"2025-07-15T07:43:20.572176598Z","level":"INFO","msg":"using version","core version":"0.17.6"}
+{"time":"2025-07-15T07:43:20.572205934Z","level":"INFO","msg":"created symlink","path":"/home/yhmoon/01.Source/mcts_2/wandb/run-20250715_074320-7ei91mjg/logs/debug-core.log"}
+{"time":"2025-07-15T07:43:20.577342098Z","level":"INFO","msg":"created new stream","id":"7ei91mjg"}
+{"time":"2025-07-15T07:43:20.577417698Z","level":"INFO","msg":"sender: started","stream_id":{"value":"7ei91mjg"}}
+{"time":"2025-07-15T07:43:20.577416024Z","level":"INFO","msg":"handler: started","stream_id":{"value":"7ei91mjg"}}
+{"time":"2025-07-15T07:43:20.577433284Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"7ei91mjg"}}
+{"time":"2025-07-15T07:43:20.885951407Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-07-15T07:43:20.927398619Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T07:43:22.810533641Z","level":"INFO","msg":"sender: getServerInfo: got server info","serverInfo":{"cliVersionInfo":{"max_cli_version":"0.19.4","min_cli_version":"0.8.20"},"latestLocalVersionInfo":null}}
+{"time":"2025-07-15T07:43:22.811398758Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T07:43:22.811503167Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-15T07:43:23.024931965Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-07-15T07:43:23.025023177Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-07-15T07:43:23.025038606Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-07-15T07:43:24.840268804Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"7ei91mjg"}}
+{"time":"2025-07-15T07:43:24.840293135Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"7ei91mjg"}}
+{"time":"2025-07-15T07:43:24.840309101Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"7ei91mjg"}}
+{"time":"2025-07-15T07:43:24.840435269Z","level":"INFO","msg":"closed stream","id":"7ei91mjg"}

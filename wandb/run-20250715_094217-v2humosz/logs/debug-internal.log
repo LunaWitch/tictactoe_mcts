@@ -1,0 +1,18 @@
+{"time":"2025-07-15T09:42:17.281805661Z","level":"INFO","msg":"using version","core version":"0.17.6"}
+{"time":"2025-07-15T09:42:17.281834581Z","level":"INFO","msg":"created symlink","path":"/home/yhmoon/01.Source/mcts_2/wandb/run-20250715_094217-v2humosz/logs/debug-core.log"}
+{"time":"2025-07-15T09:42:17.286177175Z","level":"INFO","msg":"created new stream","id":"v2humosz"}
+{"time":"2025-07-15T09:42:17.286236004Z","level":"INFO","msg":"sender: started","stream_id":{"value":"v2humosz"}}
+{"time":"2025-07-15T09:42:17.286233583Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"v2humosz"}}
+{"time":"2025-07-15T09:42:17.286253718Z","level":"INFO","msg":"handler: started","stream_id":{"value":"v2humosz"}}
+{"time":"2025-07-15T09:42:17.608890291Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-07-15T09:42:17.651908776Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T09:42:20.124712831Z","level":"INFO","msg":"sender: getServerInfo: got server info","serverInfo":{"cliVersionInfo":{"max_cli_version":"0.19.4","min_cli_version":"0.8.20"},"latestLocalVersionInfo":null}}
+{"time":"2025-07-15T09:42:20.125441168Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T09:42:20.125588719Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-15T09:42:20.331298653Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-07-15T09:42:20.33133481Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-07-15T09:42:20.331347933Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-07-15T09:42:22.241079467Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"v2humosz"}}
+{"time":"2025-07-15T09:42:22.241121058Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"v2humosz"}}
+{"time":"2025-07-15T09:42:22.241116833Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"v2humosz"}}
+{"time":"2025-07-15T09:42:22.241210452Z","level":"INFO","msg":"closed stream","id":"v2humosz"}

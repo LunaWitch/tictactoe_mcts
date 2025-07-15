@@ -1,0 +1,49 @@
+{
+  "os": "Linux-5.15.0-117-generic-x86_64-with-glibc2.31",
+  "python": "3.11.11",
+  "startedAt": "2025-07-15T08:42:01.333231Z",
+  "program": "/home/yhmoon/01.Source/mcts_2/main.py",
+  "codePath": "main.py",
+  "email": "yuhyun.moon@g.skku.edu",
+  "root": "/home/yhmoon/01.Source/mcts_2",
+  "host": "dgx-station",
+  "username": "yhmoon",
+  "executable": "/home/yhmoon/.conda/envs/yhmoon/bin/python",
+  "codePathLocal": "main.py",
+  "cpu_count": 20,
+  "cpu_count_logical": 40,
+  "gpu": "[Tesla V100-DGXS-32GB, Tesla V100-DGXS-32GB, Tesla V100-DGXS-32GB, Tesla V100-DGXS-32GB]",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "1887507697664",
+      "used": "1664693108736"
+    }
+  },
+  "memory": {
+    "total": "270159060992"
+  },
+  "cpu": {
+    "count": 20,
+    "countLogical": 40
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla V100-DGXS-32GB",
+      "memoryTotal": "34359738368"
+    },
+    {
+      "name": "Tesla V100-DGXS-32GB",
+      "memoryTotal": "34359738368"
+    },
+    {
+      "name": "Tesla V100-DGXS-32GB",
+      "memoryTotal": "34359738368"
+    },
+    {
+      "name": "Tesla V100-DGXS-32GB",
+      "memoryTotal": "34359738368"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

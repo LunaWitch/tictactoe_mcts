@@ -1,0 +1,18 @@
+{"time":"2025-07-15T07:55:04.421828545Z","level":"INFO","msg":"using version","core version":"0.17.6"}
+{"time":"2025-07-15T07:55:04.421852936Z","level":"INFO","msg":"created symlink","path":"/home/yhmoon/01.Source/mcts_2/wandb/run-20250715_075504-72ryo0s1/logs/debug-core.log"}
+{"time":"2025-07-15T07:55:04.424761025Z","level":"INFO","msg":"created new stream","id":"72ryo0s1"}
+{"time":"2025-07-15T07:55:04.424829457Z","level":"INFO","msg":"sender: started","stream_id":{"value":"72ryo0s1"}}
+{"time":"2025-07-15T07:55:04.424832767Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"72ryo0s1"}}
+{"time":"2025-07-15T07:55:04.424832462Z","level":"INFO","msg":"handler: started","stream_id":{"value":"72ryo0s1"}}
+{"time":"2025-07-15T07:55:04.808122718Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-07-15T07:55:04.851990839Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T07:55:07.411333198Z","level":"INFO","msg":"sender: getServerInfo: got server info","serverInfo":{"cliVersionInfo":{"max_cli_version":"0.19.4","min_cli_version":"0.8.20"},"latestLocalVersionInfo":null}}
+{"time":"2025-07-15T07:55:07.412109663Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T07:55:07.41228121Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-15T07:55:07.675990906Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-07-15T07:55:07.676016966Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-07-15T07:55:07.676025305Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-07-15T07:55:09.565009338Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"72ryo0s1"}}
+{"time":"2025-07-15T07:55:09.565045022Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"72ryo0s1"}}
+{"time":"2025-07-15T07:55:09.565046322Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"72ryo0s1"}}
+{"time":"2025-07-15T07:55:09.56521087Z","level":"INFO","msg":"closed stream","id":"72ryo0s1"}

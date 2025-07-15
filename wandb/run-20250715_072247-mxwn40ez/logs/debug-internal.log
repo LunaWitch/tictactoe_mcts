@@ -1,0 +1,18 @@
+{"time":"2025-07-15T07:22:47.050669616Z","level":"INFO","msg":"using version","core version":"0.17.6"}
+{"time":"2025-07-15T07:22:47.050705206Z","level":"INFO","msg":"created symlink","path":"/home/yhmoon/01.Source/mcts_2/wandb/run-20250715_072247-mxwn40ez/logs/debug-core.log"}
+{"time":"2025-07-15T07:22:47.054643853Z","level":"INFO","msg":"created new stream","id":"mxwn40ez"}
+{"time":"2025-07-15T07:22:47.054689035Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"mxwn40ez"}}
+{"time":"2025-07-15T07:22:47.05469112Z","level":"INFO","msg":"sender: started","stream_id":{"value":"mxwn40ez"}}
+{"time":"2025-07-15T07:22:47.054716263Z","level":"INFO","msg":"handler: started","stream_id":{"value":"mxwn40ez"}}
+{"time":"2025-07-15T07:22:47.419945513Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-07-15T07:22:47.468046256Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T07:22:49.608865107Z","level":"INFO","msg":"sender: getServerInfo: got server info","serverInfo":{"cliVersionInfo":{"max_cli_version":"0.19.4","min_cli_version":"0.8.20"},"latestLocalVersionInfo":null}}
+{"time":"2025-07-15T07:22:49.609764821Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T07:22:49.609929006Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-15T07:22:49.848653877Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-07-15T07:22:49.848683874Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-07-15T07:22:49.848694984Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-07-15T07:22:51.748026631Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"mxwn40ez"}}
+{"time":"2025-07-15T07:22:51.74806496Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"mxwn40ez"}}
+{"time":"2025-07-15T07:22:51.748064196Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"mxwn40ez"}}
+{"time":"2025-07-15T07:22:51.748225615Z","level":"INFO","msg":"closed stream","id":"mxwn40ez"}
