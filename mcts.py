@@ -2,9 +2,11 @@
 
 import numpy as np
 import math
+import ray
 import torch
 from config import CPUCT, BOARD_SIZE, NUM_SIMULATIONS
 from game_logic import TicTacToe
+from util import load_latest_model
 
 class Node:
     def __init__(self, parent, state, prior_p):
@@ -43,10 +45,10 @@ class Node:
         c = CPUCT * self.P * math.sqrt(self.parent.N) / (1 + self.N)
         return u + c
 
+@ray.remote(num_gpus=0.5)
 class MCTS:
-    def __init__(self, model, device):
-        self.model = model
-        self.device = device
+    def __init__(self):
+        self.model, self.device = load_latest_model()
         
     def self_play(self):
         """ 셀프 플레이를 통해 학습 데이터 생성 """

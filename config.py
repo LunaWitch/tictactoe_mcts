@@ -14,5 +14,8 @@ BATCH_SIZE = 64
 LEARNING_RATE = 0.001
 SELF_PLAY_GAMES = 200 # 한 세대의 훈련에 사용할 셀프 플레이 게임 수
 
+# RAY
+NUM_ACTOR = 8
+
 # 저장 경로
-MODEL_PATH = "final_model.pth"
+MODEL_PATH = "model_latest.pth"

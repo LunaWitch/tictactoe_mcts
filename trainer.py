@@ -1,6 +1,7 @@
 # trainer.py
 
 import numpy as np
+import ray
 import wandb
 
 import torch
@@ -9,19 +10,31 @@ from torch.utils.data import TensorDataset, DataLoader
 from tqdm import tqdm
 
 from mcts import MCTS
-from config import SELF_PLAY_GAMES, BATCH_SIZE, EPOCHS, LEARNING_RATE
+from config import SELF_PLAY_GAMES, BATCH_SIZE, EPOCHS, LEARNING_RATE, NUM_ACTOR
+from util import load_latest_model, save_model
 
-def collect_data(model, device):    
+def collect_data():    
     print("--- Collecting training data through self-play ---")
+    self_play_game_per_actor = SELF_PLAY_GAMES // NUM_ACTOR
     
-    mcts = MCTS(model, device)
+    actors = [MCTS.remote() for i in range(NUM_ACTOR)]
     all_training_data = []
-    for _ in tqdm(range(SELF_PLAY_GAMES), desc="Self Playing"):
-        all_training_data.extend(mcts.self_play())
+
+    results_referece = []
+    for actor in actors:
+        for _ in range(self_play_game_per_actor):
+            results_referece.append(actor.self_play.remote())
+
+    for _ in tqdm(range(len(results_referece))):
+        done, results_referece = ray.wait(results_referece, num_returns=1)
+        game_data = ray.get(done[0])
+        all_training_data.extend(game_data)
+
     return all_training_data
 
-def train(model, device, training_data, cnt):
+def train(training_data):
     print("--- Starting Training ---")
+    model, device = load_latest_model()
 
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     criterion_policy = torch.nn.KLDivLoss(reduction='batchmean')
@@ -29,7 +42,7 @@ def train(model, device, training_data, cnt):
     wandb.require("core")
     wandb.init(
         project="MCTS_TicTacToe",
-        name=f"{cnt}",
+        name=f"Gen",
         reinit=True
     )
 
@@ -62,6 +75,6 @@ def train(model, device, training_data, cnt):
         wandb.log({"epoch": (epoch+1)/EPOCHS, "loss": total_loss / len(dataloader)})
         
         print(f"Epoch {epoch+1}/{EPOCHS}, Loss: {loss_policy / len(dataloader)} {loss_value / len(dataloader)} {total_loss / len(dataloader):.4f}")
-    
-    torch.save(model.state_dict(), f"model_gen_{cnt+1}.pth")
+    save_model(model)
+
     wandb.finish()

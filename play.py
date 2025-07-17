@@ -2,19 +2,12 @@
 
 import torch
 from game_logic import TicTacToe
-from model import SimpleNN
-from config import BOARD_SIZE, MODEL_PATH
+from config import BOARD_SIZE
+from util import load_latest_model
 
 def play_game():
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
-    # 모델 로드
-    model = SimpleNN().to(device)
-    try:
-        model.load_state_dict(torch.load(MODEL_PATH, map_location=device,weights_only=True))
-        print("Model loaded successfully.")
-    except FileNotFoundError:
-        print(f"Model file not found at {MODEL_PATH}. Playing with an untrained model.")
+    model, device = load_latest_model()
+
     model.eval()
 
     game = TicTacToe()
