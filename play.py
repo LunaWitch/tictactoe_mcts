@@ -2,11 +2,11 @@
 
 import torch
 from game_logic import TicTacToe
-from config import BOARD_SIZE
-from util import load_latest_model
+from config import BOARD_SIZE, LATEST_MODEL
+from util import load_model
 
 def play_game():
-    model, device = load_latest_model()
+    model, device = load_model(LATEST_MODEL)
 
     model.eval()
 

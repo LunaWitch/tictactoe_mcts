@@ -9,13 +9,15 @@ CPUCT = 1.0     # 탐험(Exploration)과 활용(Exploitation)의 균형을 맞�
 GENERATION_SIZE = 10  # MCTS에서 생성할 노드의 최대 수
 
 # 훈련 설정
-EPOCHS = 20
+EPOCHS = 40
 BATCH_SIZE = 64
 LEARNING_RATE = 0.001
-SELF_PLAY_GAMES = 200 # 한 세대의 훈련에 사용할 셀프 플레이 게임 수
+SELF_PLAY_GAMES = 400 # 한 세대의 훈련에 사용할 셀프 플레이 게임 수
 
 # RAY
 NUM_ACTOR = 8
+RAY_RESULT_PATH = "ray_result"
+CHECKPOINT_MODEL = "model.pth"
 
 # 저장 경로
-MODEL_PATH = "model_latest.pth"
+LATEST_MODEL = "model_latest.pth"
